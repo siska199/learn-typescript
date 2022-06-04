@@ -31,12 +31,43 @@ interface MathFunc {
 const add: MathFunc =(x:number,y:number):number=>x+y
 
 //Clases:
-class Person{
+interface PersonInterface{
+    id:number
+    name:string
+    register():string
+}
+
+class Person implements PersonInterface{
     id: number
     name: string
     constructor(){
         console.log(123)
     }
+
+    register(){
+        return ""
+    }
 }
 
 const brad = new Person()
+
+console.log(brad.register())
+
+
+class Employee extends Person{
+    position : string
+
+    constructor(id:number,name:string,position:string){
+        super(id,name)
+        this.position = position
+    }
+}
+
+
+//Generics 
+
+function getArray<T>(items:T[]):T[]{
+    return new Array().concat(items)
+}
+
+let numArr = getArray<number>([1,2,3,4])
