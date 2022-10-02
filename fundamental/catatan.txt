@@ -1,1 +1,9 @@
 run file ts==> tsc <filename>
+https://github.com/typescript-cheatsheets/react
+
+Referensi bagus untuk penggunaan redux :
+https://dev.to/tris909/how-to-use-redux-with-typescript-1oag
+https://github.dev/Tris-909/TypeScript-Redux
+
+Referensi bagus penggunaan redux-toolkit:
+https://github.dev/jodtribhu/Redux-Tutorial
